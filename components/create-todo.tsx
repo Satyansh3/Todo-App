@@ -2,17 +2,6 @@
 import {Button} from "@/components/ui/button"
 import {zodResolver} from "@hookform/resolvers/zod"
 import {useForm} from "react-hook-form"
-import {
-    Form,
-    FormControl,
-    FormDescription,
-    FormField,
-    FormItem,
-    FormLabel,
-    FormMessage,
-  } from "@/components/ui/form"
-  import { Input } from "@/components/ui/input"
-  import {Textarea} from "@/components/ui/textarea"
   import { mutate } from "swr"
 
   import { todoSchema, type TodoSchema } from "@/lib/zod"
@@ -21,13 +10,10 @@ import {
 import {
     Dialog,
     DialogContent,
-    DialogDescription,
     DialogHeader,
     DialogTitle,
     DialogTrigger,
   } from "@/components/ui/dialog"
-import { Todo } from "@prisma/client"
-import { Checkbox } from "@/components/ui/checkbox"
 import { useState } from "react"
 import TodoForm from "./todoform"
   

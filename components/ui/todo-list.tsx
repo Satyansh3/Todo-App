@@ -3,17 +3,12 @@
 import {
     Card,
     CardContent,
-    CardDescription,
-    CardFooter,
     CardHeader,
     CardTitle,
   } from "@/components/ui/card"
 
-import { useState } from "react"
 import { Todo } from "@prisma/client"
 import useSWR from "swr";
-import { Button } from "./button";
-import { TrashIcon } from "@radix-ui/react-icons";
 import DeleteTodo from "../delete-todo";
 
 const fetcher = (url: string) => fetch(url).then((res) => res.json())
