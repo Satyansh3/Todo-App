@@ -16,9 +16,9 @@ import {
   import { Checkbox } from "@/components/ui/checkbox"
 
 interface TodoFormProps {
-    defaultValues: TodoSchema,
+    defaultValues: TodoSchema;
     onSubmit: (data : TodoSchema) => Promise<void>;
-    submitButtonText: string,
+    submitButtonText: string;
     isSubmitting: boolean;
 }
 
